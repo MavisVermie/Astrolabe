@@ -35,3 +35,98 @@
 [2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Testimonials.tsx, /src/index.css[22m
 [2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/menu/MenuPage.tsx, /src/index.css[22m
 [2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/branches/BranchesPage.tsx, /src/index.css[22m
+[2m2:05:39 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+X [ERROR] Expected ";" but found "{"
+
+    vite.config.ts:1:269:
+      1 │ ...is/Astrolabe2/vite.config.ts";iimport { defineConfig } from "vite";
+        │                                          ^
+        ╵                                          ;
+
+[31mfailed to load config from C:\Users\Mavis\Astrolabe2\vite.config.ts[39m
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+vite.config.ts:1:269: ERROR: Expected ";" but found "{"
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m server restart failed
+[2m2:05:39 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+X [ERROR] Expected ";" but found "{"
+
+    vite.config.ts:1:269:
+      1 │ ...is/Astrolabe2/vite.config.ts";iimport { defineConfig } from "vite";
+        │                                          ^
+        ╵                                          ;
+
+[31mfailed to load config from C:\Users\Mavis\Astrolabe2\vite.config.ts[39m
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+vite.config.ts:1:269: ERROR: Expected ";" but found "{"
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m server restart failed
+[2m2:05:39 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+X [ERROR] Expected ";" but found "{"
+
+    vite.config.ts:1:269:
+      1 │ ...is/Astrolabe2/vite.config.ts";iimport { defineConfig } from "vite";
+        │                                          ^
+        ╵                                          ;
+
+[31mfailed to load config from C:\Users\Mavis\Astrolabe2\vite.config.ts[39m
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+vite.config.ts:1:269: ERROR: Expected ";" but found "{"
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m server restart failed
+[2m2:05:39 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+X [ERROR] Expected ";" but found "{"
+
+    vite.config.ts:1:269:
+      1 │ ...is/Astrolabe2/vite.config.ts";iimport { defineConfig } from "vite";
+        │                                          ^
+        ╵                                          ;
+
+[31mfailed to load config from C:\Users\Mavis\Astrolabe2\vite.config.ts[39m
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+vite.config.ts:1:269: ERROR: Expected ";" but found "{"
+[2m2:05:39 AM[22m [31m[1m[vite][22m[39m server restart failed
+[2m2:05:40 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+X [ERROR] Expected ";" but found "{"
+
+    vite.config.ts:1:269:
+      1 │ ...is/Astrolabe2/vite.config.ts";iimport { defineConfig } from "vite";
+        │                                          ^
+        ╵                                          ;
+
+[31mfailed to load config from C:\Users\Mavis\Astrolabe2\vite.config.ts[39m
+[2m2:05:40 AM[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+vite.config.ts:1:269: ERROR: Expected ";" but found "{"
+[2m2:05:40 AM[22m [31m[1m[vite][22m[39m server restart failed
+[2m2:05:40 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+X [ERROR] Expected ";" but found "{"
+
+    vite.config.ts:1:269:
+      1 │ ...is/Astrolabe2/vite.config.ts";iimport { defineConfig } from "vite";
+        │                                          ^
+        ╵                                          ;
+
+[31mfailed to load config from C:\Users\Mavis\Astrolabe2\vite.config.ts[39m
+[2m2:05:40 AM[22m [31m[1m[vite][22m[39m Build failed with 1 error:
+vite.config.ts:1:269: ERROR: Expected ";" but found "{"
+[2m2:05:40 AM[22m [31m[1m[vite][22m[39m server restart failed
+[2m2:05:42 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:05:42 AM[22m [36m[1m[vite][22m[39m server restarted.
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/Astrolabe/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m2:05:42 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:05:42 AM[22m [36m[1m[vite][22m[39m server restarted.
+[2m2:05:42 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m server restarted.
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m server restarted.
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/Astrolabe/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m server restarted.
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:05:43 AM[22m [36m[1m[vite][22m[39m server restarted.
+[2m2:05:44 AM[22m [36m[1m[vite][22m[39m server restarted.
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/Astrolabe/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
