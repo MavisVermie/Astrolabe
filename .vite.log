@@ -1,0 +1,37 @@
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m268[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m12:53:02 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/menu/MenuPage.tsx, /src/index.css[22m
+[2m12:53:56 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/menu/MenuPage.tsx, /src/index.css[22m
+[2m12:54:09 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/menu/MenuPage.tsx, /src/index.css[22m
+[2m1:21:20 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.tsx, /src/index.css[22m
+[2m1:35:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m1:35:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.tsx, /src/index.css[22m
+[2m1:38:27 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.tsx, /src/index.css[22m
+[2m1:38:27 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m1:38:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m1:41:12 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m1:42:17 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m1:43:43 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m1:44:26 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Starfield.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Features.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Story.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Gallery.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Testimonials.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/shop/ShopPage.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/menu/MenuPage.tsx, /src/index.css[22m
+[2m1:46:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/branches/BranchesPage.tsx, /src/index.css[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SpaceDecor.tsx, /src/index.css[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.tsx, /src/index.css[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Features.tsx, /src/index.css[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/SpaceDecor.tsx[22m Could not Fast Refresh (export removed)
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Hero.tsx, /src/index.css, /src/components/Features.tsx, /src/components/Story.tsx, /src/components/Testimonials.tsx, /src/components/Gallery.tsx, /src/components/shop/ShopPage.tsx, /src/components/menu/MenuPage.tsx, /src/components/branches/BranchesPage.tsx[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/shop/ShopPage.tsx, /src/index.css[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Testimonials.tsx, /src/index.css[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/menu/MenuPage.tsx, /src/index.css[22m
+[2m1:49:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/branches/BranchesPage.tsx, /src/index.css[22m

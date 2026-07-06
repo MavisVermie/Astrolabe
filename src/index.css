@@ -1,0 +1,448 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/*  Astrolabe — global styles                                          */
+/*  Palette: teal #173134 · champagne #CFBD8D · gold #CF9E58 · #793635 */
+/* ------------------------------------------------------------------ */
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[#0D1F21] text-[#CFBD8D] antialiased;
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+}
+
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+::selection {
+  background: rgba(207, 158, 88, 0.35);
+  color: #fff;
+}
+
+/* --------------------------- liquid glass -------------------------- */
+
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.04);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: none;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.4px;
+  background: linear-gradient(
+    180deg,
+    rgba(207, 189, 141, 0.65) 0%,
+    rgba(207, 158, 88, 0.25) 25%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(207, 158, 88, 0.25) 75%,
+    rgba(207, 189, 141, 0.65) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ---------------------------- animations --------------------------- */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fade-in 1.6s ease-out forwards;
+}
+
+.animate-drift {
+  animation: drift 5s ease-in-out infinite;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-900 { animation-delay: 0.9s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-in {
+    animation-duration: 0.01ms;
+  }
+  .animate-drift {
+    animation: none;
+  }
+}
+
+/* ----------------------------- stars ------------------------------ */
+
+.star {
+  opacity: 0.2;
+  animation: twinkle ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 130px;
+  height: 1.5px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgba(244, 235, 214, 0), rgba(244, 235, 214, 0.9));
+  filter: drop-shadow(0 0 4px rgba(207, 158, 88, 0.6));
+  opacity: 0;
+  transform: rotate(24deg);
+  animation: shoot 13s ease-in infinite;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(24deg);
+    opacity: 0;
+  }
+  4% {
+    opacity: 0.9;
+  }
+  11% {
+    transform: translate3d(58vw, 25.8vw, 0) rotate(24deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(58vw, 25.8vw, 0) rotate(24deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star {
+    animation: none;
+    opacity: 0.5;
+  }
+  .shooting-star {
+    display: none;
+  }
+}
+
+/* ------------------------- interactivity -------------------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.tilt {
+  transition: transform 0.35s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilt-glow {
+  pointer-events: none;
+  background: radial-gradient(
+    260px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(207, 158, 88, 0.14),
+    transparent 65%
+  );
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -80%;
+  width: 55%;
+  background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.65s ease;
+  pointer-events: none;
+}
+
+.btn-shine:hover::after {
+  left: 130%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .tilt {
+    transition: none;
+  }
+  .btn-shine::after {
+    display: none;
+  }
+}
+
+/* .liquid-glass forces position:relative for its ::before ring; let
+   Tailwind's absolute/fixed placement win when both are present. */
+.liquid-glass.absolute {
+  position: absolute;
+}
+.liquid-glass.fixed {
+  position: fixed;
+}
+
+/* --------------------------- fancy layer -------------------------- */
+
+/* cursor halo */
+.cursor-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 95;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 9999px;
+  background: #cf9e58;
+  box-shadow: 0 0 10px rgba(207, 158, 88, 0.9);
+}
+
+.cursor-ring {
+  width: 38px;
+  height: 38px;
+  margin: -19px 0 0 -19px;
+  border-radius: 9999px;
+  border: 1px solid rgba(207, 189, 141, 0.45);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.cursor-ring-active .cursor-ring {
+  transform: scale(1.7);
+  background: rgba(207, 158, 88, 0.08);
+  border-color: rgba(207, 158, 88, 0.75);
+}
+
+/* marquee ticker */
+.marquee-inner {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* shimmering gold text */
+.text-shimmer {
+  background: linear-gradient(100deg, #cf9e58 20%, #f4ebd6 40%, #cf9e58 60%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4.5s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* drifting aurora glow */
+.aurora {
+  animation: aurora 17s ease-in-out infinite alternate;
+}
+
+@keyframes aurora {
+  from {
+    transform: translate(-6%, -4%) scale(1);
+  }
+  to {
+    transform: translate(7%, 6%) scale(1.18);
+  }
+}
+
+/* rotating astrolabe rings */
+.astro-ring {
+  animation: spin-slow 28s linear infinite;
+}
+
+.astro-ring-reverse {
+  animation: spin-slow 44s linear infinite reverse;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-inner,
+  .text-shimmer,
+  .aurora,
+  .astro-ring,
+  .astro-ring-reverse {
+    animation: none;
+  }
+  .text-shimmer {
+    color: #cf9e58;
+    background: none;
+  }
+  .cursor-layer {
+    display: none;
+  }
+}
+
+/* branches slider: continuous conveyor, pauses on hover */
+.branches-track {
+  animation: marquee 70s linear infinite;
+}
+
+.branches-slider:hover .branches-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .branches-track {
+    animation: none;
+    overflow-x: auto;
+  }
+}
+
+/* customer reviews conveyor (two rows, opposite directions) */
+.reviews-track {
+  animation: marquee 80s linear infinite;
+}
+
+.reviews-track-reverse {
+  animation: marquee 80s linear infinite reverse;
+}
+
+.reviews-slider:hover .reviews-track,
+.reviews-slider:hover .reviews-track-reverse {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reviews-track,
+  .reviews-track-reverse {
+    animation: none;
+    overflow-x: auto;
+  }
+}
+
+/* flying "visit us now" container */
+.levitate {
+  animation: levitate 4.5s ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.4deg);
+  }
+  50% {
+    transform: translateY(-13px) rotate(1.4deg);
+  }
+}
+
+.levitate-shadow {
+  animation: levitate-shadow 4.5s ease-in-out infinite;
+}
+
+@keyframes levitate-shadow {
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleX(0.65);
+    opacity: 0.22;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .levitate,
+  .levitate-shadow {
+    animation: none;
+  }
+}
