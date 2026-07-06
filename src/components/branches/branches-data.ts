@@ -1,3 +1,5 @@
+import { asset } from "../../lib/asset";
+
 export type Branch = {
   id: number;
   name: string;
@@ -24,7 +26,7 @@ export const BRANCHES: Branch[] = [
     name: "Taj Mall",
     city: "Amman",
     phone: "+962779080906",
-    image: "/branches/taj-mall.webp",
+    image: asset("branches/taj-mall.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Taj%20Mall%20Amman%20Jordan",
     location: "Taj Mall, Abdoun, Amman, Jordan",
@@ -38,7 +40,7 @@ export const BRANCHES: Branch[] = [
     name: "HTU",
     city: "Amman",
     phone: "+962790303109",
-    image: "/branches/htu.webp",
+    image: asset("branches/htu.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20HTU%20King%20Hussein%20Business%20Park%20Amman",
     location:
@@ -57,7 +59,7 @@ export const BRANCHES: Branch[] = [
     name: "Icon 7",
     city: "Amman",
     phone: "+96265346466",
-    image: "/branches/icon-7.webp",
+    image: asset("branches/icon-7.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Icon%207%20Amman%20Jordan",
     location: "Icon 7, Amman, Jordan",
@@ -71,7 +73,7 @@ export const BRANCHES: Branch[] = [
     name: "Astrolabe The Roastery",
     city: "Amman",
     phone: "+96265346466",
-    image: "/branches/roastery.webp",
+    image: asset("branches/roastery.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20The%20Roastery%20Amman%20Jordan",
     location: "Amman, Jordan",
@@ -85,7 +87,7 @@ export const BRANCHES: Branch[] = [
     name: "Astrolabe Coffee BMW",
     city: "Amman",
     phone: "+962792192012",
-    image: "/branches/bmw.webp",
+    image: asset("branches/bmw.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20BMW%20Amman%20Jordan",
     location: "BMW showroom, Amman, Jordan",
@@ -99,7 +101,7 @@ export const BRANCHES: Branch[] = [
     name: "Astrolabe Coffee ASU",
     city: "Amman",
     phone: "+962790608046",
-    image: "/branches/asu.webp",
+    image: asset("branches/asu.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20ASU%20Applied%20Science%20Private%20University%20Amman",
     location: "Applied Science Private University, Amman, Jordan",
@@ -113,7 +115,7 @@ export const BRANCHES: Branch[] = [
     name: "Tabarbour",
     city: "Amman",
     phone: "+962796782836",
-    image: "/branches/tabarbour.webp",
+    image: asset("branches/tabarbour.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Tabarbour%20Al-Shahid%20Street%20Amman",
     location: "Al-Shahid Street, Tabarbour, Amman, Jordan",
@@ -127,7 +129,7 @@ export const BRANCHES: Branch[] = [
     name: "Irbid",
     city: "Irbid",
     phone: "+962799700181",
-    image: "/branches/irbid.webp",
+    image: asset("branches/irbid.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20King%20Hussein%20Street%20Irbid%20Jordan",
     location: "King Hussein Street, next to McDonald's, Irbid, Jordan",
@@ -140,7 +142,7 @@ export const BRANCHES: Branch[] = [
     name: "Alnakheel",
     city: "Amman",
     phone: "+962796782837",
-    image: "/branches/alnakheel.webp",
+    image: asset("branches/alnakheel.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Dahiat%20Al%20Nakheel%20Amman",
     location: "Dahiat Al Nakheel, Amman, Jordan",
@@ -157,7 +159,7 @@ export const BRANCHES: Branch[] = [
     name: "Zarqa",
     city: "Zarqa",
     phone: "+962778717017",
-    image: "/branches/zarqa.webp",
+    image: asset("branches/zarqa.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Souq%20Bab%20Al%20Madina%20Zarqa",
     location: "Souq Bab Al Madina, Zarqa, Jordan",
@@ -171,7 +173,7 @@ export const BRANCHES: Branch[] = [
     name: "Quattro Village",
     city: "Amman",
     phone: "+962791472013",
-    image: "/branches/quattro-village.webp",
+    image: asset("branches/quattro-village.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Quattro%20Village%20Amman",
     location: "Quattro Village, Amman, Jordan",
@@ -185,7 +187,7 @@ export const BRANCHES: Branch[] = [
     name: "Petra University",
     city: "Amman",
     phone: "+962790608046",
-    image: "/branches/petra-university.webp",
+    image: asset("branches/petra-university.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Petra%20University%20Airport%20Road%20Amman",
     location: "Petra University, Airport Road, Amman, Jordan",
@@ -198,7 +200,7 @@ export const BRANCHES: Branch[] = [
     name: "Abdali Mall",
     city: "Amman",
     phone: "+962790303107",
-    image: "/branches/abdali-mall.webp",
+    image: asset("branches/abdali-mall.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Abdali%20Mall%20Amman",
     location: "Abdali Mall, Abdali St., Amman 11937, Jordan",
@@ -211,7 +213,7 @@ export const BRANCHES: Branch[] = [
     name: "Downtown",
     city: "Amman",
     phone: "+96264901539",
-    image: "/branches/downtown.webp",
+    image: asset("branches/downtown.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Downtown%20Amman",
     location: "Downtown, Amman, Jordan",
@@ -224,7 +226,7 @@ export const BRANCHES: Branch[] = [
     name: "Khalda",
     city: "Amman",
     phone: "+962790303109",
-    image: "/branches/khalda.webp",
+    image: asset("branches/khalda.webp"),
     googleMap:
       "https://www.google.com/maps/search/?api=1&query=Astrolabe%20Coffee%20Khalda%20Amman",
     location: "Khalda, Amman, Jordan",

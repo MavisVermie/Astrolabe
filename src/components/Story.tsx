@@ -3,6 +3,7 @@ import Reveal from "./Reveal";
 import Constellation from "./Constellation";
 import { Orbit } from "./SpaceDecor";
 import CountUp from "./CountUp";
+import { asset } from "../lib/asset";
 
 const STATS = [
   { to: 12, suffix: "", label: "Single Origins" },
@@ -25,7 +26,7 @@ export default function Story() {
           <div className="astro-ring absolute inset-0 rounded-full border border-dashed border-[#CFBD8D]/35" />
           <div className="astro-ring-reverse absolute -inset-3 rounded-full border border-dotted border-[#CF9E58]/25" />
           <img
-            src="/brand/logo-mark.png"
+            src={asset("brand/logo-mark.png")}
             alt=""
             aria-hidden="true"
             className="animate-drift absolute inset-0 m-auto h-16 w-16 opacity-90"

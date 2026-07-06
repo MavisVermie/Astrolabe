@@ -1,3 +1,5 @@
+import { asset } from "../../lib/asset";
+
 export type Category = "Coffee" | "Capsules" | "Tea" | "Snacks" | "Drinkware";
 
 export type Product = {
@@ -164,7 +166,7 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
-export const imageFor = (p: Product) => `/shop/${p.slug}.webp`;
+export const imageFor = (p: Product) => asset(`shop/${p.slug}.webp`);
 export const fmtJOD = (n: number) => `${n.toFixed(2)} JOD`;
 
 export type CartLine = { product: Product; qty: number };

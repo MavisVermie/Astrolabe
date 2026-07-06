@@ -1,6 +1,7 @@
 import { useEffect, useRef, type MouseEvent } from "react";
 import { ArrowRight, Star } from "lucide-react";
 import Starfield from "./Starfield";
+import { asset } from "../lib/asset";
 import { NorthStar, Orbit } from "./SpaceDecor";
 
 export default function Hero() {
@@ -52,8 +53,8 @@ export default function Hero() {
       <div ref={videoWrapRef} className="absolute inset-0 will-change-transform">
         <video
           className="h-full w-full object-cover"
-          src="/hero/coffee-splash.mp4"
-          poster="/hero/hero-poster.jpg"
+          src={asset("hero/coffee-splash.mp4")}
+          poster={asset("hero/hero-poster.jpg")}
           autoPlay
           muted
           loop

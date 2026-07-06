@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, ArrowRight, ShoppingBag, CupSoda, MapPin, House } from "lucide-react";
+import { asset } from "../lib/asset";
 
 type NavbarProps = {
   /** Which dedicated page is open (highlights its nav link). */
@@ -77,7 +78,7 @@ export default function Navbar({ activePage, cartCount, onCartOpen }: NavbarProp
         {/* Logo */}
         <a href="#top" className="group flex items-center gap-3">
           <img
-            src="/brand/logo-mark.png"
+            src={asset("brand/logo-mark.png")}
             alt="Astrolabe emblem"
             className="h-10 w-10 rounded-full object-cover transition-transform duration-700 group-hover:rotate-[360deg]"
           />

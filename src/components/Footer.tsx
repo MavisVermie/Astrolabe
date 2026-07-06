@@ -2,6 +2,7 @@ import { Instagram, Facebook, ArrowUpRight } from "lucide-react";
 import Starfield from "./Starfield";
 import Reveal from "./Reveal";
 import Constellation from "./Constellation";
+import { asset } from "../lib/asset";
 
 const SOCIALS = [
   {
@@ -74,7 +75,7 @@ export default function Footer() {
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 py-10 sm:flex-row sm:justify-between lg:px-10">
           <a href="#top" className="group flex items-center gap-3">
             <img
-              src="/brand/logo-mark.png"
+              src={asset("brand/logo-mark.png")}
               alt="Astrolabe emblem"
               className="h-9 w-9 rounded-full object-cover transition-transform duration-700 group-hover:rotate-[360deg]"
             />

@@ -2,26 +2,27 @@ import { useCallback, useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight, MapPin, Compass, Star } from "lucide-react";
 import Starfield from "./Starfield";
 import Reveal from "./Reveal";
+import { asset } from "../lib/asset";
 import { Moon } from "./SpaceDecor";
 
 type Branch = { name: string; src: string };
 
 const BRANCHES: Branch[] = [
-  { name: "Taj Mall", src: "/branches/taj-mall.webp" },
-  { name: "HTU", src: "/branches/htu.webp" },
-  { name: "Icon 7", src: "/branches/icon-7.webp" },
-  { name: "Astrolabe The Roastery", src: "/branches/roastery.webp" },
-  { name: "Astrolabe Coffee BMW", src: "/branches/bmw.webp" },
-  { name: "Astrolabe Coffee ASU", src: "/branches/asu.webp" },
-  { name: "Tabarbour", src: "/branches/tabarbour.webp" },
-  { name: "Irbid", src: "/branches/irbid.webp" },
-  { name: "Alnakheel", src: "/branches/alnakheel.webp" },
-  { name: "Zarqa", src: "/branches/zarqa.webp" },
-  { name: "Quattro Village", src: "/branches/quattro-village.webp" },
-  { name: "Petra University", src: "/branches/petra-university.webp" },
-  { name: "Abdali Mall", src: "/branches/abdali-mall.webp" },
-  { name: "Downtown", src: "/branches/downtown.webp" },
-  { name: "Khalda", src: "/branches/khalda.webp" },
+  { name: "Taj Mall", src: asset("branches/taj-mall.webp") },
+  { name: "HTU", src: asset("branches/htu.webp") },
+  { name: "Icon 7", src: asset("branches/icon-7.webp") },
+  { name: "Astrolabe The Roastery", src: asset("branches/roastery.webp") },
+  { name: "Astrolabe Coffee BMW", src: asset("branches/bmw.webp") },
+  { name: "Astrolabe Coffee ASU", src: asset("branches/asu.webp") },
+  { name: "Tabarbour", src: asset("branches/tabarbour.webp") },
+  { name: "Irbid", src: asset("branches/irbid.webp") },
+  { name: "Alnakheel", src: asset("branches/alnakheel.webp") },
+  { name: "Zarqa", src: asset("branches/zarqa.webp") },
+  { name: "Quattro Village", src: asset("branches/quattro-village.webp") },
+  { name: "Petra University", src: asset("branches/petra-university.webp") },
+  { name: "Abdali Mall", src: asset("branches/abdali-mall.webp") },
+  { name: "Downtown", src: asset("branches/downtown.webp") },
+  { name: "Khalda", src: asset("branches/khalda.webp") },
 ];
 
 function BranchCard({

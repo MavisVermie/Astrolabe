@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import { Flame, Snowflake, Sparkles } from "lucide-react";
+import { asset } from "../../lib/asset";
 
 /** A drink on the board. Prices in JOD; null = size not offered. */
 export type MenuItem = {
@@ -27,7 +28,7 @@ export const MENU: MenuSection[] = [
     id: "hot",
     tagline: "Slow mornings, warm hands",
     icon: Flame,
-    image: { src: "/menu/hot.webp", alt: "Flat white with golden latte art" },
+    image: { src: asset("menu/hot.webp"), alt: "Flat white with golden latte art" },
     columns: [
       [
         { name: "Espresso", small: 2.25, regular: null },
@@ -65,7 +66,7 @@ export const MENU: MenuSection[] = [
     id: "cold",
     tagline: "Chilled, poured over stars of ice",
     icon: Snowflake,
-    image: { src: "/menu/cold.webp", alt: "Iced coffee with cream swirl" },
+    image: { src: asset("menu/cold.webp"), alt: "Iced coffee with cream swirl" },
     columns: [
       [
         { name: "Baklava Special Blend", small: 5.0, regular: 5.5, signature: true },
